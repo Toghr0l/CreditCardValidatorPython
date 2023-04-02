@@ -1,3 +1,8 @@
+# Importing colorama for colorizing texts
+import colorama
+# Importing functions from colorama
+from colorama import Fore, Back, Style
+
 # Initialize variables to store the sum of odd and even digits
 sum_odd_digits = 0
 sum_even_digits = 0
@@ -32,10 +37,10 @@ total = sum_odd_digits + sum_even_digits
 # Check if the total sum is divisible by 10
 if total % 10 == 0:
     # If it is, print "Valid" to indicate that the credit card number is valid
-    print("Valid")
+    print(f"{Fore.GREEN}Valid{Fore.RESET}")
 else:
     # Otherwise, print "InValid" to indicate that the credit card number is not valid
-    print("InValid")
+    print(f"{Fore.RED}InValid{Fore.RESET}")
 
 # Wait for user input before exiting
 input()
